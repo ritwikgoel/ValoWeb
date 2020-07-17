@@ -1,9 +1,11 @@
 // Javascript
 $(function() {
   var currentDate = new Date();
+  var finalDate = new Date(2020, 07, 01)
+
 //  $('.countdown').countdown("yyyy/MM/dd/hh:mm:ss", function(event)
 //	Delete line 6
-  $('.time').countdown(15 * 24 * 60 * 60 * 1000 + currentDate.valueOf(), function(event)
+  $('.time').countdown(finalDate.valueOf() , function(event)
 //	until here
 	{
     $this = $(this);
